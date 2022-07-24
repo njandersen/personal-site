@@ -6,71 +6,210 @@ p {
     color: white;
 }
 
-/* Header Elements */
-.navContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15%;
-}
-.title {
-    text-align: left;
-    color: white;
-}
-.navBar {
-    padding: 0 0 4.5rem;
-    color: white;
-    
-}
-.navItem {
-    text-align: right;
-    display: inline-block;
-    padding-inline: 1.5rem;
-}
-.navLink {
-    color: white;
-    text-decoration: none;
-}
+
 /* Greeting */
 .greetings {
     color: white;
-    margin: 20px 80px 80px;
-    padding: 20px 300px 20px;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-bottom: 25%;
+    display: flex;
+    flex-direction: column;
 }
 .hello {
     font-size: 2rem;
     margin: 0%;
     padding: 0%;
+    
 }
 .name{
     font-size: 4rem;
     margin: 0%;
-    padding: 0%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+ 
 }
 .tag {
     font-size: 3rem;
-    margin: 0% 0% 30%;
+    margin: 0%;
     padding: 0%;
 }
 
-/* About Me Section */
-.myPic {
-    width: 20%;
-    padding-left: 5%;
-    padding-top: 3%;
-    
+
+/* About Section */
+.about-heading{
+    font-size: 2rem;
+    padding-left: 15%;
 }
-.aboutContainer {
+.about__row {
+    align-items: center;
+}
+.row {
     display: flex;
     margin: 20px 80px 80px;
-    padding: 20px 300px 20px;
-    font-size: 1.5rem;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
-.aboutHeading {
-    margin: 0px 80px;
-    padding: 0px 300px;
-    font-size: 2rem;
+.col {
+   
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.about__text-wrapper {
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+
+.my-pic {
+    max-width: 95%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0;
+    margin: 0 0 0 10px;
+    border: 30%;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__text-wrapper {
+        padding-bottom: 65px;
+    }
+
+    .col {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
 }
 /* Skills Section */
+.skillHeader {
+    margin: auto;
+    padding-top: 20%;
+    padding-left: 50%;
+    padding-bottom: 5%;
+    font-size: 2rem;
+}
 .web {
     display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-left: 80%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+}
+.webAbout {
+    margin-right: 50%;
+    margin-left: 5%;
+    max-width: 540px;
+ 
+}
+
+.android {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-left: 50%;
+    padding-top: 15%;
+    font-size: 1.5rem;
+}
+.androidAbout {
+    padding-top: 20%;
+    margin-right: 50%;
+    margin-left: 5%;
+    max-width: 540px;
+}
+
+.col-skill {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.row-skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+}
+
+@media screen and (max-width: 991px) {
+    .web {
+        padding-right: 30px;
+        padding-left: 30%;
+    }
+    .webAbout {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .android {
+        padding-right: 30px;
+        padding-left: 30%;
+    }
+    
+    .androidAbout {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .webAbout {
+        padding-bottom: 65px;
+    }
+    .androidAbout {
+        padding-bottom: 65px;
+    }
+
+    .col-skill {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+/* Contact Section */
+.getInTouch {
+    text-align: center;
+    padding-top: 5%;
+    
+}
+.contactHeading {
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+.contactBody {
+    font-size: 1.5rem;
+    margin-top: 0%;
+    
+}
+.contact {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    
+}
+
+/* Footer Section */
+.icons {
+    text-align: center;
+    padding-top: 40px;
+}
+.github {
+    padding-right: 30px;
+    color: white;
+}
+.linkedin {
+    color: white;
+}
+.footer-text{
+    text-align: center;
 }

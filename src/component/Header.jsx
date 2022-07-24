@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
+
 
 function Header() {
     return (
@@ -22,7 +22,12 @@ function Header() {
                     </li>
                 </ul>
             </nav>
+            {/* Button to display resume */}
+                <a href='../files/Nicholas Jordan Andersen.pdf'> 
+                    <button className='resumeBtn'>Resume</button>
+                </a>
         </div>
+        
     </header>
     );
 }

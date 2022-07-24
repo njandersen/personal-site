@@ -1,16 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from "./Header";
 import About from "./About";
 import Greeting from "./Greeting";
 import Skills from "./Skills";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Icons from "./Icons";
+import NavBar from "./NavBar";
 
 function App() {
     return (
         <main>
-            <Header />
-            <Greeting />
-            <About />
-            <Skills />
+        <Router>
+            <NavBar />
+        </Router>
+        <Greeting />
+        <About />
+        <Skills />
+        <Contact />
+        <Icons />
+        <Footer /> 
 
         </main>
     )
