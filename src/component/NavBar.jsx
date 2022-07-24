@@ -41,26 +41,26 @@ function NavBar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                    <Link to='/#about' className='nav-links'>About</Link>
+                    <a href='/#about' className='nav-links' onClick={closeMobileMenu}>About</a>
                 </li>
                  <li className='nav-item'>
-                    <Link to='/#skills' className='nav-links'>Skills</Link>
+                    <a href='/#skills' className='nav-links' onClick={closeMobileMenu}>Skills</a>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/#contact' className='nav-links'>Contact</Link>
+                    <a href='/#contact' className='nav-links' onClick={closeMobileMenu}>Contact</a>
                 </li>
                 <li className='nav-item'>
                     <Link to='/#projects' className='nav-links'>Projects</Link>
                 </li>
                 <li className='nav-btn'>
                     {button ? (
-                    <Link to='../files/Nicholas Jordan Andersen.pdf' className='btn-link'>
+                    <a href='../files/Nicholas Jordan Andersen.pdf' className='btn-link'>
                         <Button buttonStyle='btn--outline'>Resume</Button>
-                    </Link>
+                    </a>
                     ) : (
-                    <Link to='../files/Nicholas Jordan Andersen.pdf' className='btn-link'>
+                    <a href='../files/Nicholas Jordan Andersen.pdf' className='btn-link'>
                         <Button buttonStyle='btn--outline' buttonSize='btn--moblie'>Resume</Button>
-                     </Link>
+                     </a>
                     )}
                 </li>
                 </ul>

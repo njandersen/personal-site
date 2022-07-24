@@ -8,7 +8,7 @@ function Skills() {
     }, []);
 
     return(
-        <section className="skills">
+        <section id="skills">
             <div className="skillHeader" data-Aos='fade-up'>
                 <h2>Skills</h2>
             </div>

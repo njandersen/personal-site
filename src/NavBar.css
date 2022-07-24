@@ -1,5 +1,5 @@
 .navbar {
-    background: #1c2237;
+    background: #2C3333;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -35,6 +35,7 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    font-family: 'Open Sans';
 }
 
 .navbar-icon {
@@ -54,10 +55,11 @@
     height: 80px;
     border-bottom: 2px solid transparent;
     text-decoration: none;
+    font-family: 'Open Sans';
 }
 
 .nav-item:hover {
-    border-bottom: 2px solid #f00946;
+    border-bottom: 2px solid #A5C9CA;
 }
 
 .nav-links {

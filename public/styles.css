@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Slab&display=swap');
+
 body{
     background-color: #395B64;
 }
@@ -20,6 +22,7 @@ p {
     font-size: 2rem;
     margin: 0%;
     padding: 0%;
+    font-family: 'Open Sans';
     
 }
 .name{
@@ -27,12 +30,14 @@ p {
     margin: 0%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-family: 'Montserrat';
  
 }
 .tag {
     font-size: 3rem;
     margin: 0%;
     padding: 0%;
+    font-family: 'Open Sans';
 }
 
 
@@ -40,6 +45,8 @@ p {
 .about-heading{
     font-size: 2rem;
     padding-left: 15%;
+    font-family: 'Roboto Slab';
+    color: #A5C9CA;
 }
 .about__row {
     align-items: center;
@@ -60,6 +67,8 @@ p {
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    font-size: 2rem;
+    font-family: 'Open Sans';
 }
 
 .my-pic {
@@ -68,7 +77,7 @@ p {
     vertical-align: middle;
     padding-right: 0;
     margin: 0 0 0 10px;
-    border: 30%;
+    border: 10px solid #A5C9CA;
 }
 
 @media screen and (max-width: 991px) {
@@ -95,6 +104,8 @@ p {
     padding-left: 50%;
     padding-bottom: 5%;
     font-size: 2rem;
+    font-family: 'Roboto Slab';
+    color: #A5C9CA;
 }
 .web {
     display: flex;
@@ -103,11 +114,17 @@ p {
     padding-left: 80%;
     padding-bottom: 5%;
     font-size: 1.5rem;
+    font-family: 'Roboto Slab';
+    color: #E7F6F2;
 }
 .webAbout {
     margin-right: 50%;
     margin-left: 5%;
     max-width: 540px;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    color: #2C3333;
+    
  
 }
 
@@ -118,12 +135,17 @@ p {
     padding-left: 50%;
     padding-top: 15%;
     font-size: 1.5rem;
+    font-family: 'Roboto Slab';
+    color: #E7F6F2;
 }
 .androidAbout {
     padding-top: 20%;
     margin-right: 50%;
     margin-left: 5%;
     max-width: 540px;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    color: #2C3333;
 }
 
 .col-skill {
@@ -142,20 +164,24 @@ p {
     .web {
         padding-right: 30px;
         padding-left: 30%;
+        display: inline-block;
     }
     .webAbout {
         padding-right: 30px;
         padding-left: 30px;
+        display: inline;
     }
 
     .android {
         padding-right: 30px;
         padding-left: 30%;
+        display: inline-block;
     }
     
     .androidAbout {
         padding-right: 30px;
         padding-left: 30px;
+        display: inline;
     }
 }
 
@@ -181,6 +207,8 @@ p {
 .contactHeading {
     font-size: 3rem;
     margin-bottom: 0%;
+    font-family: 'Montserrat';
+    color: #A5C9CA;
 }
 .contactBody {
     font-size: 1.5rem;
