@@ -30,8 +30,8 @@ function Skills() {
             </div>
             <div className="col-skill">
                 <p className="webAbout" data-Aos='fade-left'>
-                    Web development is something that I have gained a new pasion for. 
-                    I think react has opened doors to more possiblities when it comes 
+                    Web development is something that I have gained a new passion for. 
+                    I think react has opened doors to more possibilities when it comes 
                     to web design. 
                 </p>
             </div>
@@ -54,7 +54,7 @@ function Skills() {
             <div className="col-skill">
                 <p className="androidAbout" data-Aos='fade-right'>
                     I have always been a fan of the Andorid platform. Designing apps for it is something I love to do.
-                    I have experince building apps from the ground up with databases and backend servers. 
+                    I have experience building apps from the ground up with databases and backend servers. 
                 </p>
                 </div>
             </div>
