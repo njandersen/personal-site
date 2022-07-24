@@ -1,8 +1,8 @@
 import { Button } from "../Button";
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function Contact() {
-    const [button, setButton] = useState(true);
+    const [button] = useState(true);
 
     return(
         <section id="contact">
