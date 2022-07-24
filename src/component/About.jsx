@@ -41,20 +41,3 @@ function About() {
 
 export default About;
 
-{/* <section id="about">
-    <div className="aboutHeading" data-Aos='fade-up'>
-        <h2>About Me</h2>
-    </div>
-    <div className="aboutContainer">
-        <div className="aboutBody" data-Aos='fade-up'>
-            <p>
-                My name is Nicholas Jordan Andersen. I love building websites and android apps.
-                I started studying Computer Science in 2019 although I have always had a passion
-                for technology and coding.
-            </p>
-        </div>
-        <div className="pic" data-Aos='fade-up'>
-            <img className="myPic" src='../files/DJ-9331.jpg'></img>
-        </div>
-    </div>
-</section> */}
