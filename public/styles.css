@@ -1,0 +1,76 @@
+body{
+    background-color: #395B64;
+}
+
+p {
+    color: white;
+}
+
+/* Header Elements */
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+}
+.title {
+    text-align: left;
+    color: white;
+}
+.navBar {
+    padding: 0 0 4.5rem;
+    color: white;
+    
+}
+.navItem {
+    text-align: right;
+    display: inline-block;
+    padding-inline: 1.5rem;
+}
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+/* Greeting */
+.greetings {
+    color: white;
+    margin: 20px 80px 80px;
+    padding: 20px 300px 20px;
+}
+.hello {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 0%;
+}
+.name{
+    font-size: 4rem;
+    margin: 0%;
+    padding: 0%;
+}
+.tag {
+    font-size: 3rem;
+    margin: 0% 0% 30%;
+    padding: 0%;
+}
+
+/* About Me Section */
+.myPic {
+    width: 20%;
+    padding-left: 5%;
+    padding-top: 3%;
+    
+}
+.aboutContainer {
+    display: flex;
+    margin: 20px 80px 80px;
+    padding: 20px 300px 20px;
+    font-size: 1.5rem;
+}
+.aboutHeading {
+    margin: 0px 80px;
+    padding: 0px 300px;
+    font-size: 2rem;
+}
+/* Skills Section */
+.web {
+    display: flex;
+}
