@@ -54,11 +54,11 @@ function NavBar() {
                 </li>
                 <li className='nav-btn'>
                     {button ? (
-                    <a href='../files/Nicholas Jordan Andersen.pdf' className='btn-link'>
+                    <a href='../files/Resume.pdf' className='btn-link'>
                         <Button buttonStyle='btn--outline'>Resume</Button>
                     </a>
                     ) : (
-                    <a href='../files/Nicholas Jordan Andersen.pdf' className='btn-link'>
+                    <a href='../files/Resume.pdf' className='btn-link'>
                         <Button buttonStyle='btn--outline' buttonSize='btn--moblie'>Resume</Button>
                      </a>
                     )}
