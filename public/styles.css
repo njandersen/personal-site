@@ -147,7 +147,7 @@ ul {
   font-size: 1.5rem;
   max-height: 600px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #skills {
     display: flex;
     justify-content: center;
