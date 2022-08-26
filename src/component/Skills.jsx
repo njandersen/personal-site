@@ -3,64 +3,41 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 
 function Skills() {
-    useEffect(() => {
-        Aos.init({duration: 2000});
-    }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
-    return(
-        <section id="skills">
-            <div className="skillHeader" data-Aos='fade-up'>
-                <h2>Skills</h2>
-            </div>
-            <div className="row-skill">
-            <div className="col-skill">
-            <div className="web" data-Aos='fade-left'>
-                <h3>Full Stack Web</h3>
-                <div className="webLang">
-                <ul>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>mongoDB</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-            <div className="col-skill">
-                <p className="webAbout" data-Aos='fade-left'>
-                    Web development is something that I have gained a new passion for. 
-                    I think react has opened doors to more possibilities when it comes 
-                    to web design. 
-                </p>
-            </div>
-            </div>
-            <div className="row-skill">
-            <div className="col-skill">
-            <div className="android" data-Aos='fade-right'>
-                <h3>Android Development</h3>
-                <div className="androidLang">
-                    <ul>
-                        <li>Java</li>
-                        <li>XML</li>
-                        <li>SQlite</li>
-                        <li>Android Studio</li>
-                        <li>Android ROOM</li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <div className="col-skill">
-                <p className="androidAbout" data-Aos='fade-right'>
-                    I have always been a fan of the Andorid platform. Designing apps for it is something I love to do.
-                    I have experience building apps from the ground up with databases and backend servers. 
-                </p>
-                </div>
-            </div>
-    
-        </section>
-    );
+  return (
+    <section id="skills">
+      <div className="skills-header" data-Aos="fade-down">
+        <h1>Skills & Experience</h1>
+        <p className="skills-about">
+          Ever since I started my computer science program in 2019, I've been on
+          a mission to learn as much as possible. It took me a while to finally
+          find a tech stack that I really and truly enjoyed working on. I
+          thought it was java. But eventually I landed on Javascript, more
+          specifically react. I've enjoyed building sites with various different
+          stacks and I would love an opportunity to show off my skills
+        </p>
+      </div>
+      <div className="card frontend-skills" data-Aos="fade-up">
+        <ul className="skills-list">
+          <h2>Front End Development</h2>
+          <li>React</li>
+          <li>Javascript</li>
+          <li>CSS/HTML</li>
+        </ul>
+      </div>
+      <div className="card backend-skills" data-Aos="fade-up">
+        <ul>
+          <h2>Back End Development</h2>
+          <li>Node.js</li>
+          <li>Next.js</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+    </section>
+  );
 }
 
 export default Skills;

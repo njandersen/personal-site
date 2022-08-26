@@ -1,243 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Slab&display=swap");
 
-body{
-    background-color: #395B64;
+:root {
+  --color-text: #eeeeee;
+  --color-border: #787a91;
+}
+
+body {
+  background-color: #0f044c;
+}
+h1 {
+  color: var(--color-text);
+  font-family: "Roboto Slab";
+}
+h2 {
+  color: #141e61;
+  font-family: "Roboto Slab";
+}
+h3 {
+  font-family: "Open Sans";
 }
 
 p {
-    color: white;
+  color: var(--color-text);
 }
-
+ul {
+  list-style-type: none;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: White;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px var(--color-border);
+  background-color: #eeeeee;
+}
 
 /* Greeting */
+/* ------------------------------------------- */
 .greetings {
-    color: white;
-    padding-top: 20%;
-    padding-left: 20%;
-    padding-bottom: 25%;
-    display: flex;
-    flex-direction: column;
+  color: var(--color-text);
+  padding-top: 20%;
+  padding-left: 20%;
+  padding-bottom: 25%;
+  display: flex;
+  flex-direction: column;
 }
 .hello {
-    font-size: 2rem;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Open Sans';
-    
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
 }
-.name{
-    font-size: 4rem;
-    margin: 0%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: 'Montserrat';
- 
+.name {
+  font-size: 4rem;
+  margin: 0%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .tag {
-    font-size: 3rem;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Open Sans';
+  font-size: 3rem;
+  margin: 0%;
+  padding: 0%;
 }
-
 
 /* About Section */
-.about-heading{
-    font-size: 2rem;
-    padding-left: 15%;
-    font-family: 'Roboto Slab';
-    color: #A5C9CA;
+/* ------------------------------------------- */
+.about-heading {
+  font-size: 2rem;
+  padding-left: 15%;
 }
 .about__row {
-    align-items: center;
+  align-items: center;
 }
 .row {
-    display: flex;
-    margin: 20px 80px 80px;
-    flex-wrap: wrap;
-    align-content: stretch;
+  display: flex;
+  margin: 20px 80px 80px;
+  flex-wrap: wrap;
+  align-content: stretch;
 }
 .col {
-   
-    flex: 1;
-    max-width: 50%;
-    flex-basis: 50%;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
 }
 .about__text-wrapper {
-    max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
-    font-size: 2rem;
-    font-family: 'Open Sans';
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+  font-size: 2rem;
 }
 
 .my-pic {
-    max-width: 95%;
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 0;
-    margin: 0 0 0 10px;
-    border: 10px solid #A5C9CA;
+  max-width: 95%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0;
+  margin: 0 0 0 10px;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px var(--color-border);
 }
 
 @media screen and (max-width: 991px) {
-    .container {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .about__text-wrapper {
-        padding-bottom: 65px;
-    }
+  .about__text-wrapper {
+    padding-bottom: 65px;
+  }
 
-    .col {
-        max-width: 100%;
-        flex-basis: 100%;
-    }
+  .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 }
 /* Skills Section */
-.skillHeader {
-    margin: auto;
-    padding-top: 20%;
-    padding-left: 50%;
-    padding-bottom: 5%;
-    font-size: 2rem;
-    font-family: 'Roboto Slab';
-    color: #A5C9CA;
+/* ------------------------------------------- */
+#skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30%;
 }
-.web {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    padding-left: 80%;
-    padding-bottom: 5%;
-    font-size: 1.5rem;
-    font-family: 'Roboto Slab';
-    color: #E7F6F2;
+.skills-header {
+  font-size: 2rem;
 }
-.webAbout {
-    margin-right: 50%;
-    margin-left: 5%;
-    max-width: 540px;
-    font-family: 'Open Sans';
-    font-size: 2rem;
-    color: #2C3333;
-    
- 
+.skills-about {
+  width: 80%;
 }
-
-.android {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    padding-left: 50%;
-    padding-top: 15%;
-    font-size: 1.5rem;
-    font-family: 'Roboto Slab';
-    color: #E7F6F2;
+.frontend-skills {
+  margin-right: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
 }
-.androidAbout {
-    padding-top: 20%;
-    margin-right: 50%;
-    margin-left: 5%;
-    max-width: 540px;
-    font-family: 'Open Sans';
-    font-size: 2rem;
-    color: #2C3333;
+.backend-skills {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
 }
-
-.col-skill {
-    flex: 1;
-    max-width: 50%;
-    flex-basis: 50%;
-}
-.row-skill {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-
-}
-
-@media screen and (max-width: 991px) {
-    .web {
-        padding-right: 30px;
-        padding-left: 30%;
-        display: inline-block;
-    }
-    .webAbout {
-        padding-right: 30px;
-        padding-left: 30px;
-        display: inline;
-    }
-
-    .android {
-        padding-right: 30px;
-        padding-left: 30%;
-        display: inline-block;
-    }
-    
-    .androidAbout {
-        padding-right: 30px;
-        padding-left: 30px;
-        display: inline;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .webAbout {
-        padding-bottom: 65px;
-    }
-    .androidAbout {
-        padding-bottom: 65px;
-    }
-
-    .col-skill {
-        max-width: 100%;
-        flex-basis: 100%;
-    }
+  #skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .frontend-skills {
+    margin-bottom: 2rem;
+  }
 }
+
+/* Projects Section */
+/* ------------------------------------------- */
+
+.projects-heading {
+  margin: auto;
+  padding-top: 20%;
+  padding-left: 50%;
+  padding-bottom: 5%;
+  font-size: 2rem;
+}
+.project1-card {
+  margin-left: 25%;
+  width: 900px;
+}
+.project1-img {
+  height: 600px;
+  width: 750px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px gray;
+}
+.project1-link {
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
 /* Contact Section */
+/* ------------------------------------------- */
 .getInTouch {
-    text-align: center;
-    padding-top: 5%;
-    
+  text-align: center;
+  padding-top: 5%;
 }
 .contactHeading {
-    font-size: 3rem;
-    margin-bottom: 0%;
-    font-family: 'Montserrat';
-    color: #A5C9CA;
+  font-size: 3rem;
+  margin-bottom: 0%;
 }
 .contactBody {
-    font-size: 1.5rem;
-    margin-top: 0%;
-    
+  font-size: 1.5rem;
+  margin-top: 0%;
 }
 .contact {
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    padding: 10px 60px;
-    border-radius: 5px;
-    margin: 10px 0px;
-    cursor: pointer;
-    
+  background-color: black;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
 }
 
 /* Footer Section */
+/* ------------------------------------------- */
 .icons {
-    text-align: center;
-    padding-top: 40px;
+  text-align: center;
+  padding-top: 40px;
 }
 .github {
-    padding-right: 30px;
-    color: white;
+  padding-right: 30px;
+  color: white;
 }
 .linkedin {
-    color: white;
+  color: white;
 }
-.footer-text{
-    text-align: center;
+.footer-text {
+  text-align: center;
 }
