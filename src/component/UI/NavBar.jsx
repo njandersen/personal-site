@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Button } from "./Button";
 
-function Nav() {
+function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [button, setButton] = useState(true);
 

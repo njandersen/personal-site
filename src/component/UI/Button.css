@@ -57,7 +57,7 @@
 .btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-out;
-  background-color: #787a91;
+  background-color: white;
   color: #242424;
 }
 

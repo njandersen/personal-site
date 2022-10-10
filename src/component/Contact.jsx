@@ -1,28 +1,17 @@
-import { Button } from "./UI/Button";
-import React, { useState } from "react";
+import React from "react";
 
 function Contact() {
-  const [button] = useState(true);
-
   return (
     <section id="contact">
-      <div className="getInTouch">
-        <h1 className="contactHeading">Get In Touch</h1>
-        <p className="contactBody">
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-3xl text-teal-400">Get In Touch</h1>
+        <p className="ml-10">
           I would love the opportunity to learn more about my craft and make new
           and interesting things.
         </p>
-        {button ? (
-          <a href="mailto:njandersen22@gmail.com" className="btn-link">
-            <Button buttonStyle="btn--outline">Contact Me</Button>
-          </a>
-        ) : (
-          <a href="mailto:njandersen22@gmail.com" className="btn-link">
-            <Button buttonStyle="btn--outline" buttonSize="btn--moblie">
-              Contact Me
-            </Button>
-          </a>
-        )}
+        <button className="bg-teal-400 text-white rounded  mt-10 h-10 w-40 hover:bg-white hover:border-teal-400 hover:border-2 hover:text-teal-400">
+          <a href="mailto:njandersen22@gmail.com">Contact Me</a>
+        </button>
       </div>
     </section>
   );

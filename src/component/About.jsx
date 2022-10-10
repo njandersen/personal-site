@@ -1,6 +1,9 @@
 import React from "react";
 import Aos from "aos";
 import { useEffect } from "react";
+
+import Icons from "./UI/Icons";
+
 import "aos/dist/aos.css";
 
 function About() {
@@ -27,6 +30,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Icons />
     </section>
   );
 }

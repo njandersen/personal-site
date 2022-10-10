@@ -1,17 +1,13 @@
-
 import React from "react";
 
-
-
-
 function Footer() {
-   return (
-      <section id='footer'>
-      <div className="footer-text">
-      <p>© Nicholas Jordan Andersen.</p>
+  return (
+    <section id="footer">
+      <div className="justify-center flex">
+        <p>© Nicholas Jordan Andersen.</p>
       </div>
-      </section>
-   );
+    </section>
+  );
 }
 
 export default Footer;
