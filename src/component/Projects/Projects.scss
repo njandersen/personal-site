@@ -1,0 +1,38 @@
+@use "public/base";
+
+.projects-heading {
+  margin: auto;
+  padding-top: 20%;
+  padding-left: 50%;
+  padding-bottom: 5%;
+  font-size: 2rem;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.project1-card {
+  @include base.card;
+  width: 900px;
+}
+.project1-img {
+  height: 600px;
+  width: 750px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px gray;
+}
+.project1-link {
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .project1-card {
+    width: 480px;
+  }
+  .project1-img {
+    width: 480px;
+  }
+}

@@ -1,0 +1,30 @@
+@use "public/base";
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30%;
+}
+.skills-header {
+  font-size: 2rem;
+}
+.skills-about {
+  width: 80%;
+}
+.skills-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 780px) {
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-cards {
+    flex-direction: column;
+  }
+}

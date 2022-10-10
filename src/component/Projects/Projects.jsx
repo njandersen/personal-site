@@ -1,4 +1,5 @@
 import "aos/dist/aos.css";
+import "./Projects.scss";
 
 function Projects() {
   return (
