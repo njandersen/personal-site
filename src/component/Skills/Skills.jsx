@@ -1,15 +1,26 @@
 import Aos from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import "./Skills.scss";
+
 import SkillCard from "./SkillCard";
 import SkillsSummary from "./SkillsSummary";
 
 function Skills() {
   const card1Title = "Front End ";
   const card2Title = "Back End";
-  const frontendSkills = ["React", "Javascript", "CSS/HTML", "Sass"];
-  const backendSkills = ["Node.js", "Next.js", "Firebase"];
+  const frontendSkills = [
+    { name: "React" },
+    { name: "Javascript" },
+    { name: "HTML" },
+    { name: "CSS/Tailwind/Sass" },
+  ];
+  const backendSkills = [
+    { name: "Node.js" },
+    { name: "Next.js" },
+    { name: "Express" },
+    { name: "Firebase" },
+    { name: "MongoDB" },
+  ];
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -17,21 +28,20 @@ function Skills() {
 
   return (
     <section id="skills">
-      <div className="skills-container">
+      <div>
         <SkillsSummary />
-        <div className="skills-cards">
+        <div className="md:flex md:justify-center md:flex-row">
           <SkillCard
             title={card1Title}
-            skill1={frontendSkills[0]}
-            skill2={frontendSkills[1]}
-            skill3={frontendSkills[2]}
-            skill4={frontendSkills[3]}
+            skill={frontendSkills.map((skill) => (
+              <li>{skill.name}</li>
+            ))}
           />
           <SkillCard
             title={card2Title}
-            skill1={backendSkills[0]}
-            skill2={backendSkills[1]}
-            skill3={backendSkills[2]}
+            skill={backendSkills.map((skill) => (
+              <li>{skill.name}</li>
+            ))}
           />
         </div>
       </div>
