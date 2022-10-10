@@ -9,36 +9,25 @@ function About() {
   }, []);
 
   return (
-    <>
-      <section id="about">
-        <div className="container">
-          <div className="about-heading" data-Aos="fade-up">
-            <h1>About Me</h1>
-          </div>
-          <div className="row about__row">
-            <div className="col">
-              <div className="about__text-wrapper" data-Aos="fade-up">
-                <p>
-                  My name is Nicholas Jordan Andersen. I love building websites
-                  and android apps. I started studying Computer Science in 2019
-                  although I have always had a passion for technology and
-                  coding.
-                </p>
-              </div>
-            </div>
-            <div className="col">
-              <div className="about__img-wrapper" data-Aos="fade-up">
-                <img
-                  className="my-pic"
-                  src="../files/portfolio-pic.jpg"
-                  alt="My Pic"
-                ></img>
-              </div>
+    <section id="about">
+      <div className="flex justify-center items-center flex-col mt-20">
+        <div data-Aos="fade-up">
+          <h1 className="text-teal-400 text-3xl pb-10">About Me</h1>
+        </div>
+        <div>
+          <div>
+            <div data-Aos="fade-up">
+              <p className="text-black text-xl ml-10 md:max-w-6xl">
+                My name is Nicholas Jordan Andersen. I've been studying computer
+                science since 2019. Since then I have fell in love with React
+                and Next.js specifically. I enjoy making modern sites with a
+                simplistic, sleek design.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
