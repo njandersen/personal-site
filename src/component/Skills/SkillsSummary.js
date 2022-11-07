@@ -3,13 +3,12 @@ function SkillsSummary() {
     <div className="flex justify-center items-center flex-col">
       <h1 className="text-teal-400 text-3xl mt-80">Skills & Experience</h1>
       <p className="text-black my-10 ml-10 text-lg md:max-w-6xl">
-        Ever since I started my computer science program, I've been on a mission
-        to learn as much as possible. It took me a while to finally find a tech
-        stack that I really and truly enjoyed working on. But eventually I
-        landed on Javascript, more specifically react. The current tech stack I
-        am focused on is Next.js, Firebase and Tailwind. I've built a lot of
-        cool sites with this stack and I feel it works really well. I would love
-        the chance to show what I know and grow as a developer.
+        Through my classes I have been exposed to many different languages and
+        tools. Like Java and C++ for instance. Just recently I learned about
+        Docker and containerization of projects. What I have enjoyed the most
+        though is my personal web projects. I have learned a great deal about
+        building backend REST API’s and frontend SPA’s. I am always searching to
+        grow as a developer and look forward to more opportunities to do so.
       </p>
     </div>
   );

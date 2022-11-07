@@ -20,6 +20,8 @@ function Skills() {
     { name: "Express" },
     { name: "Firebase" },
     { name: "MongoDB" },
+    { name: "Prisma" },
+    { name: "PostgreSQL" },
   ];
 
   useEffect(() => {
