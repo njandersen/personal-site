@@ -18,13 +18,17 @@ function Accordion({ skills }) {
     const isExpanded = index === expandedIndex;
 
     const renderedSkills = item.skillList.map((skill) => {
-      return <li key={skill}>{skill}</li>;
+      return (
+        <li className="p-1" key={skill}>
+          {skill}
+        </li>
+      );
     });
 
     return (
       <div key={item.id}>
         <div
-          className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer "
+          className="flex justify-between p-3 bg-teal-400 text-white border-b items-center cursor-pointer "
           onClick={() => handleClick(index)}
         >
           {item.label}

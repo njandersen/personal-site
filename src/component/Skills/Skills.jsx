@@ -35,7 +35,7 @@ function Skills() {
     <section id="skills">
       <div>
         <SkillsSummary />
-        <div className="w-2/3  ml-20 md:ml-48">
+        <div className="w-2/3 mt-10  ml-20 md:ml-48">
           <Accordion skills={skills} />
         </div>
       </div>
