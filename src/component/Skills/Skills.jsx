@@ -2,26 +2,29 @@ import Aos from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 
-import SkillCard from "./SkillCard";
 import SkillsSummary from "./SkillsSummary";
+import Accordion from "../UI/Accordion";
 
 function Skills() {
-  const card1Title = "Front End ";
-  const card2Title = "Back End";
-  const frontendSkills = [
-    { name: "React" },
-    { name: "Javascript" },
-    { name: "HTML" },
-    { name: "CSS/Tailwind/Sass" },
-  ];
-  const backendSkills = [
-    { name: "Node.js" },
-    { name: "Next.js" },
-    { name: "Express" },
-    { name: "Firebase" },
-    { name: "MongoDB" },
-    { name: "Prisma" },
-    { name: "PostgreSQL" },
+  const skills = [
+    {
+      id: "1",
+      label: "Front End",
+      skillList: ["React", "JavaScript", "HTML", "CSS/Tailwind/Sass"],
+    },
+    {
+      id: "2",
+      label: "Back End",
+      skillList: [
+        "Node.js",
+        "Next.js",
+        "Express",
+        "Firebase",
+        "MongoDB",
+        "Prisma",
+        "PostgreSQL",
+      ],
+    },
   ];
 
   useEffect(() => {
@@ -32,8 +35,8 @@ function Skills() {
     <section id="skills">
       <div>
         <SkillsSummary />
-        <div className="md:flex md:justify-center md:flex-row">
-          <SkillCard
+        <div className="w-2/3  ml-20 md:ml-48">
+          {/* <SkillCard
             title={card1Title}
             skill={frontendSkills.map((skill) => (
               <li>{skill.name}</li>
@@ -44,7 +47,8 @@ function Skills() {
             skill={backendSkills.map((skill) => (
               <li>{skill.name}</li>
             ))}
-          />
+          /> */}
+          <Accordion skills={skills} />
         </div>
       </div>
     </section>
