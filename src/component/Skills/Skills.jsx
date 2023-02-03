@@ -36,18 +36,6 @@ function Skills() {
       <div>
         <SkillsSummary />
         <div className="w-2/3  ml-20 md:ml-48">
-          {/* <SkillCard
-            title={card1Title}
-            skill={frontendSkills.map((skill) => (
-              <li>{skill.name}</li>
-            ))}
-          />
-          <SkillCard
-            title={card2Title}
-            skill={backendSkills.map((skill) => (
-              <li>{skill.name}</li>
-            ))}
-          /> */}
           <Accordion skills={skills} />
         </div>
       </div>
