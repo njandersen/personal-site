@@ -53,7 +53,7 @@ function Nav(props) {
                   ))}
                   <li>
                     {button ? (
-                      <a href="../files/ResumeV3.pdf" className="btn-link">
+                      <a href="../files/ResumeV4.pdf" className="btn-link">
                         <Button buttonStyle="btn--outline">Resume</Button>
                       </a>
                     ) : (
